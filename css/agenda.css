@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section_header {
+    background-color: #3D9DD9;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between
+}
+
+.logo_name {
+    font-size: 2em;
+    margin-right: 50px;
+}
+
+.links_header {
+    display: flex;
+    align-items: center;
+}
+
+.links_header a {
+    margin-right: 20px;
+}
+
+.section_header .logo a {
+    color: #FFFF;
+    text-decoration: none;
+}
+
+.circle { 
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.circle svg {
+    position: relative;
+    top: 2px;
+    left: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+/*-------------------------section-------------------------*/
+
+.content {
+    display: flex;
+}
+
+.first_section {
+    background-color: aquamarine;
+}
+
+.second_section {
+    flex-grow: 1;
+    /* background-color: rgb(136, 127, 255); */
+}
+
+.menu_lateral {
+    width: 300px;
+    height: 100vh;
+    background-color: #ffffff;
+    border: 1px solid #D9D9D9;   
+    padding: 30px 0px 40px 0px;
+}
+
+.main_topic h2{
+    padding: 0px 0px 0px 10px;
+    position: relative;
+    top: -15px;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+.item_menu {
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    display: none;
+}
+
+.paciente{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 20px 0px 20px 10px;
+    display: flex;
+}
+
+.background_right {
+    padding: 20px 0px 0px 20px;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px 0px;
+    background-color: #fff;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search_input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.8em;
+    outline: none;
+  }
+
+.search_input::placeholder {
+    color: #888;
+}
+
+.options{
+    display: flex;
+    position: relative;
+}
+
+.options .novoAgendamento,.observacoes{
+    background-color: #fff;
+    border: 1px solid #D9D9D9;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
