@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    background-color: #42a5f5;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+  }
+  
+  header .logo {
+    
+    width: 159;
+    height: 48;
+    top: 24px;
+    left: 35px;
+     
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+     
+  }
+  
+  nav {
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    display: flex;
+    gap: 35px;
+    margin-left: -700px;
+  }
+  
+  .user-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background-color: white;
+    padding: 20px;
+    min-height: 100vh;
+    border: 1px solid #ddd
+  }
+  
+  .sidebar h2 {
+    width: 157;
+    height: 39;
+    top: 122px;
+    left: 33px;
+
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+
+  }
+  
+  .sidebar .menu {
+    background-color: rgba(238, 238, 238, 1);
+    ;
+    width: 77;
+    height: 24;
+    top: 235px;
+    left: 33px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200%
+
+
+    
+  }
+  
+  .main {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: white;
+  }
+  
+  .profile-header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+  }
+  
+  .profile-header .info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile-header .circle {
+    width: 60px;
+    height: 60px;
+    background-color: #42a5f5;
+    border-radius: 50%;
+  }
+  
+  .profile-header .details {
+    font-size: 14px;
+  }
+  
+  .profile-header .details strong {
+    font-size: 16px;
+    color: #42a5f5;
+  }
+  
+  .btn {
+    background-color: #42a5f5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .section {
+    margin-top: 20px;
+  }
+  
+  .section h3 {
+    color: #42a5f5;
+  }
+  
+  .section p {
+    font-size: 14px;
+    margin: 10px 0;
+    
+  }
+  
+  .clinician {
+    margin-top: 15px;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  .borda {
+    border: 1px solid #ddd;
+    padding: 20px;
+    line-height: 30px;
+
+
+  }

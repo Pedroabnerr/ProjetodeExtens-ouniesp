@@ -1,0 +1,46 @@
+
+header {
+    background-color: #42a5f5;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+  }
+  
+  header .logo {
+    
+    width: 159;
+    height: 48;
+    top: 24px;
+    left: 35px;
+     
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+     
+  }
+  
+  nav {
+
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    display: flex;
+    gap: 35px;
+    margin-left: -900px;
+  }
+  
+  .user-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
