@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prontuário - Middley</title>
+  <link rel="stylesheet" href="tela3.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    #Pacientesp, #Agendamentop {
+      cursor: pointer;
+      color: rgb(255, 249, 249);
+      transition: color 0.3s ease;
+    }
+
+    #Pacientesp:hover, #Agendamentop:hover {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Middley</div>
+    <nav>
+      <div id="Agendamentop">Agendamento</div>
+      <div id="Pacientesp">Pacientes</div>
+    </nav>
+    <div class="user-icon">👤</div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Prontuário</h2>
+      <div class="menu">Resumo</div>
+    </aside>
+
+    <main class="main">
+      <section class="profile-header">
+        <div class="info">
+          <div class="circle"></div>
+          <div class="details">
+            <strong>Usuário Indefinido</strong><br/>
+            Idade: indefinido<br/>
+            Primeira consulta em: Indefinido<br/>
+            Atendimentos: 0<br/>
+            Faltas: 0
+          </div>
+        </div>
+        <button class="btn">VISUALIZAR CADASTRO</button>
+      </section>
+
+      <div class="clinician">Clínico responsável: Luiza Marinho</div>
+
+      <section class="section">
+        <h3>Antecedentes Pessoais</h3>
+        <section class="borda">
+        <p>Hipertensão arterial sistêmica (HAS) – em uso de Losartana 50 mg 1x/dia.</p>
+        <p>Dislipidemia – uso irregular de sinvastatina.</p>
+        <p>Tabagismo cessado há 2 anos (fumava 1 maço/dia por 20 anos).</p>
+        <p>História familiar positiva para doença coronariana precoce (pai infartou aos 54 anos).</p>
+      </section>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
