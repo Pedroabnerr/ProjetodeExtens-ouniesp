@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pacientes do Dia - Middley</title>
+  <link rel="stylesheet" href="listadeespera.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h1 class="logo">middley <span>ADMIN</span></h1>
+      <nav class="menu">
+        <ul>
+          <li class="active"><i class="icon">&#128100;</i> Pacientes</li>
+          <li><i class="icon">&#128197;</i> Calendário</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <h2> Pacientes do dia</h2>
+        <div class="user-info">
+          <span class="circle"></span>
+          <div>
+            <strong>Luiz Andrade</strong><br />
+            <small>admin</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="patients-list">
+        <div class="patient">
+          <div class="avatar-circle"></div>
+          <div class="info">
+            <strong>Luiz Viera</strong>
+            <span></span>
+            <p></p>
+          </div>
+          <button class="btn">VISUALIZAR PRONTUÁRIO</button>
+        </div>
+
+        <div class="patient">
+          <div class="avatar-circle"></div>
+          <div class="info">
+            <strong>Pedro Augusto</strong>
+            <span></span>
+            <p></p>
+          </div>
+          <button class="btn">VISUALIZAR PRONTUÁRIO</button>
+        </div>
+
+        <div class="patient">
+          <div class="avatar-circle"></div>
+          <div class="info">
+            <strong>Fernanda Amorin</strong>
+            <span></span>
+            <p></p>
+          </div>
+          <button class="btn">VISUALIZAR PRONTUÁRIO</button>
+        </div>
+
+        <div class="patient">
+          <div class="avatar-circle"></div>
+          <div class="info">
+            <strong>Ana Luíza</strong>
+            <span></span>
+            <p></p>
+          </div>
+          <button class="btn">VISUALIZAR PRONTUÁRIO</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+
+  <div class="floating-buttons">
+    <button id="novo-agendamento">Novo agendamento</button>
+    <button id="cancelar-agendamento">Cancelar agendamento</button>
+  </div>
+
+  <script src="listadeespera.js"></script>
+</body>
+</html>
