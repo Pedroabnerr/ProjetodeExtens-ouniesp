@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background: rgba(255, 254, 254, 1);
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  width: 303px;
+}
+
+.logo {
+  height: 111px;
+  border-bottom: 2px solid rgba(217, 217, 217, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin-right: -20px;
+  margin-top: -20px;
+  background-color: rgba(255, 254, 254, 1);
+  font-size: 24px;
+  margin-bottom: 80px;
+  color: #1e5550;
+  margin-left: -20px;
+}
+
+.logo span {
+  font-size: 12px;
+  color: #4ec3b3;
+  display: block;
+  margin-top: 4px;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu li {
+  padding: 12px 10px;
+  cursor: pointer;
+  color: #333;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.menu li.active,
+.menu li:hover {
+  background: #d4d4d4;
+  font-weight: bold;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px 40px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(217, 217, 217, 1);
+  padding-bottom: 11px;
+  margin-bottom: 20px;
+  height: 64px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 254, 254, 1);
+  padding: 19px;
+  border-left: 2px solid rgba(217, 217, 217, 1);
+  border-bottom: 2px solid rgba(217, 217, 217, 1);
+  color: rgba(22, 71, 66, 1);
+}
+
+.circle {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: #6d4760;
+  position: relative;
+  right: 8px;
+}
+.cadastro h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #1e5348;
+}
+
+.formulario {
+  max-width: 800px;
+}
+
+.foto {
+  width: 90px;
+  height: 90px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  margin-left: 35px;
+  
+}
+
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  transform: translateY(-100px);
+  transform: translateX(148px);
+  position: relative;
+  top: -100px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 150px;
+}
+
+input, select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+h2 {
+font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(22, 71, 66, 1)
+
+}
+
