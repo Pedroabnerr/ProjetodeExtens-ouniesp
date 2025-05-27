@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>middley</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pacientes do Dia - Middley</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
-    <section>
-        <div class="seaction_header">
-            <div class="title">
-                <h1>middley</h1>
-            </div>
-            <input type="text" class="block_login login" placeholder="Código do operador">
-            <input type="password" class="block_login password" placeholder="Senha">
-            <button onclick="verify()">Entrar</button>
-
-            <p class="res"></p>
+  <div class="container">
+    <aside class="sidebar"></aside>
+    
+    <main class="content">
+      <header class="topbar">
+        <h2> Pacientes do dia</h2>
+        <div class="user-info">
+          <span class="circle"></span>
+          <div>
+            <strong>Luiz Andrade</strong><br />
+            <small>admin</small>
+          </div>
         </div>
-    </section>
-    <script src="login.js"></script>
+      </header>
+      <section class="patients-list"></section>
+    </main>
+  </div>
+
+  <div class="floating-buttons">
+    <button id="novo-agendamento" class="newAppointement">Novo agendamento</button>
+  </div>
+
+  <script type="module" src="js/index.js"></script>
 </body>
 </html>

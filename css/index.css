@@ -1,0 +1,105 @@
+.patient {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  position: relative;
+  transition: background-color 0.3s;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.patient:hover {
+  background-color: #a7e0dc;
+}
+
+.avatar-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2d867f;
+  flex-shrink: 0;
+}
+
+.info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.info strong {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.info p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+}
+
+.btn {
+  background-color: #2d867f;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #048573;
+}
+
+/* .icon-remover {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  fill: #000000;
+  transition: transform 0.2s;
+}
+
+.icon-remover:hover {
+  transform: scale(1.2);
+} */
+
+.floating-buttons {
+  position: fixed;
+  bottom: 70px;
+  right: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.floating-buttons button {
+  padding: 10px 15px;
+  background-color:#2d867f;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.floating-buttons button:hover {
+  background-color: #256b64; 
+} 
+
+.detailPoints{
+  background-color: #7e7c7c;
+  padding: 20px 3px;
+  border-radius: 5px; 
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
