@@ -59,7 +59,7 @@
   background-color: #048573;
 }
 
-/* .icon-remover {
+.icon-remover {
   margin-left: 0.5rem;
   cursor: pointer;
   fill: #000000;
@@ -67,8 +67,8 @@
 }
 
 .icon-remover:hover {
-  transform: scale(1.2);
-} */
+  transform: scale(1.5);
+}
 
 .floating-buttons {
   position: fixed;

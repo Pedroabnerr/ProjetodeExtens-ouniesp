@@ -1,4 +1,12 @@
-import { pacientesDoDia } from "../js/patients.js";
+import { pacientesDoDia } from "./patients.js";
+import { loadCompo, renderizarPacientes } from "./global.js"
+
+// Faz a busca do paciente
+document.addEventListener("DOMContentLoaded", ()=> {
+  loadCompo('../components/aside.html', '.sidebar', ()=> {
+    console.log(document.querySelector(".sidebar").innerHTML);
+  })
+});
 
 document.querySelector(".send").addEventListener('click', (e) => {
     e.preventDefault();
@@ -16,7 +24,7 @@ document.querySelector(".send").addEventListener('click', (e) => {
           <span></span>
           <p>${pacientesDoDia[item].horario}</p>
         </div>
-        <button class="btn">VISUALIZAR PRONTUÁRIO </button>
+        <button class="btn">VISUALIZAR CADASTRO </button>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
           fill="currentColor" class="bi bi-three-dots-vertical icon-remover"
           data-id="${item}" viewBox="0 0 16 16">
@@ -27,4 +35,14 @@ document.querySelector(".send").addEventListener('click', (e) => {
         show.appendChild(div);
       }
     })
+    document.querySelector(".btn").addEventListener('click', ()=> {
+      window.location.href = "../pages/rapSheet.html";
+    })
 })
+
+// Endereça para os pacientes do dia 
+document.body.addEventListener('click', function(e) {
+  if (e.target.closest('.PacientesDiaConteiner')) {
+    window.location.href = "../index.html";
+  }
+});
