@@ -1,6 +1,7 @@
 import { pacientesDoDia } from "./patients.js";
 import { loadCompo, renderizarPacientes } from "./global.js";
 
+
 // Renderiza os elementos do Index 
 document.addEventListener("DOMContentLoaded", () => {
   renderizarPacientes(pacientesDoDia);
@@ -10,8 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Deleta os pacientes do dia
   document.querySelector(".patients-list").addEventListener("click", (event) => {
-    if (event.target.classList.contains("icon-remover")) {
-      const id = event.target.dataset.id;
+    if (event.target.closest(".icon-remover")) {
+      const elemento_html = document.querySelector(".icon-remover");
+      const id = elemento_html.getAttribute('data-id');
       const icon = event.target;
 
       document.querySelectorAll(".detailPoints").forEach(e => e.remove());
@@ -51,12 +53,5 @@ document.body.addEventListener('click', function(e) {
 //Endereça para a página de cadastro
 document.querySelector("btn").addEventListener('click', () => {
   window.location.href = "pages/rapSheet.html";
-})
-
-// 
-document.querySelector(".patients-list").addEventListener("click", (event) => {
-  if(event.target.contains(".btn")) {
-    const id = event.target.dataset.id;
-  }
 })
 
