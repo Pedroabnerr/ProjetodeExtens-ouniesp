@@ -1,10 +1,40 @@
-import { pacientesDoDia } from "./patients.js";
 import { loadCompo, renderizarPacientes } from "./global.js";
 
+let pacientes = [];
+
+async function carregarPacientesDoBanco() {
+  try {
+    const resposta = await fetch('http://localhost:3000/pacientes');
+    pacientes = await resposta.json();
+    renderizarPacientes(pacientes);
+
+  } catch (erro) {
+    console.error('Erro ao carregar pacientes:', erro);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  carregarPacientesDoBanco(); // busca do banco, não mais de arquivo local
+  loadCompo('components/aside.html', '.sidebar');
+
+//visualisar prontuario
+document.querySelector(".patients-list").addEventListener('click', (event)=>{
+  if(event.target.classList.contains('btn')){
+    const elemento_html = event.target;
+    const id = elemento_html.closest('.patient')?.querySelector('.icon-remover')?.getAttribute('data-id');
+
+    const pacienteEncontrado = pacientes.find(p => p.id == id);
+    if(pacienteEncontrado){
+      sessionStorage.setItem("pacienteSelecionado", JSON.stringify(pacienteEncontrado));
+      window.location.href = "pages/rapSheet.html";
+      }
+  }
+});
+});
 
 // Renderiza os elementos do Index 
 document.addEventListener("DOMContentLoaded", () => {
-  renderizarPacientes(pacientesDoDia);
+  // renderizarPacientes(pacientesDoDia);
   loadCompo('components/aside.html', '.sidebar', () => {
   console.log(document.querySelector('.sidebar').innerHTML);
   });
@@ -38,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
 // Novo Agendamento -> calendar.html
 document.querySelector(".newAppointement").addEventListener("click", () => {
   window.location.href = "pages/calendar.html";
@@ -53,5 +84,4 @@ document.body.addEventListener('click', function(e) {
 //Endereça para a página de cadastro
 document.querySelector("btn").addEventListener('click', () => {
   window.location.href = "pages/rapSheet.html";
-})
-
+});

@@ -1,5 +1,3 @@
-import { pacientesDoDia } from "./patients.js";
-
 export function loadCompo(path, targetSelector, callback) {
   fetch(path)
     .then(response => {
@@ -23,7 +21,7 @@ export function renderizarPacientes(pacientes) {
   if (!lista) return;
   lista.innerHTML = "";
 
-  Object.entries(pacientes).forEach(([id, paciente]) => {
+ pacientes.forEach(paciente => {
     const div = document.createElement("div");
     div.className = "patient";
 
@@ -38,7 +36,7 @@ export function renderizarPacientes(pacientes) {
       <div class="but_Thirdpoints">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
           fill="currentColor" class="bi bi-three-dots-vertical icon-remover"
-          data-id="${id}" viewBox="0 0 16 16">
+          data-id="${paciente.id}" viewBox="0 0 16 16">
           <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0
             1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
         </svg>
