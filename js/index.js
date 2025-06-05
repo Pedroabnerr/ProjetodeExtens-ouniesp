@@ -4,7 +4,7 @@ let pacientes = [];
 
 async function carregarPacientesDoBanco() {
   try {
-    const resposta = await fetch('http://localhost:3000/pacientes');
+    const resposta = await fetch(`http://localhost:3000/pacientes`);
     pacientes = await resposta.json();
     renderizarPacientes(pacientes);
 
@@ -26,7 +26,7 @@ document.querySelector(".patients-list").addEventListener('click', (event)=>{
     const pacienteEncontrado = pacientes.find(p => p.id == id);
     if(pacienteEncontrado){
       sessionStorage.setItem("pacienteSelecionado", JSON.stringify(pacienteEncontrado));
-      window.location.href = "pages/rapSheet.html";
+      window.location.href = "pages/chart.html";
       }
   }
 });

@@ -35,11 +35,11 @@
             <label>Data de Nascimento <input type="date" name="data_nascimento"></label>
           </div>
 
-          <!-- <div class="linha">
+          <div class="linha">
             <label>Sexo</label>
-            <label><input type="checkbox"> Masculino</label>
-            <label><input type="checkbox"> Feminino</label>
-          </div> -->
+            <label><input type="radio" name="sexo" value="Masculino"> Masculino</label>
+            <label><input type="radio" name="sexo" value="Feminino"> Feminino</label>
+          </div> 
 
           <div class="linha">
             <label>CPF <input type="text" name="cpf"></label>
@@ -67,25 +67,23 @@
 
           <div class="linha">
             <label>Cidade <input type="text" name="cidade"></label>
-            <!-- <label>Estado 
-              <select>
-                <option>Selecione</option>
-                <option>SP</option>
-                <option>RJ</option>
+            <label>Estado 
+              <select name="estado">
+                <option value="">Selecione</option>
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
                 
               </select>
-            </label> -->
+            </label>
           </div>
-
-          <!-- <div class="linha">
+          <div class="linha">
             <label>País 
               <select>
                 <option>Brasil</option>
                 <option>Argentina</option>
-                
               </select>
             </label>
-          </div> -->
+          </div>
         </div>
       </section>
     </main>
