@@ -1,0 +1,105 @@
+
+.patient-card {
+  background-color: #fff;
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.patient-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.avatar-big {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #aaa;
+  flex-shrink: 0;
+}
+
+.patient-info strong {
+  font-size: 18px;
+  color: #1e5550;
+}
+
+.patient-info p {
+  color: #555;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.attendings-text {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #1e5550;
+  font-size: 16px;
+}
+
+/* Prontuário médico */
+.medical-record {
+  background-color: #fff;
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.record-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.timestamp {
+  color: #888;
+  font-style: italic;
+}
+
+.record-body p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #333;
+}
+
+.record-body strong {
+  color: #1e5550;
+}
+
+.record-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Botões */
+.btn {
+  background-color: #048573;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #164b46;
+}
+
+.btn.secondary {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn.secondary:hover {
+  background-color: #c7c7c7;
+}

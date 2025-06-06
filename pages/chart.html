@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../css/chart.css" />
+  <link rel="stylesheet" href="../css/global.css">
+  <title>Prontuário</title>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar"></aside>
+
+    <main class="content">
+      <header class="topbar">
+        <h2>Prontuário</h2>
+        <div class="user-info">
+          <span class="circle"></span>
+          <div>
+            <strong>Luiz Andrade</strong><br />
+            <small>doctor</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="patient-card">
+        <div class="patient-header">
+        <div class="avatar-big"></div>
+        <div class="patient-info">
+          <strong id="nome-paciente">Fernanda Amorin</strong>
+          <p id="idade-paciente">idade: 23 anos</p>
+        </div>
+          <button class="btn" id="ver-cadastro">VISUALIZAR CADASTRO</button>
+        </div>
+
+     <p class="attendings-text">Atendimentos:</p>
+    </section>
+      <section class="medical-record">
+        <div class="record-header">
+          <span id="medico-responsavel">Por: </span>
+          <span class="timestamp" id="registro-hora">🕒 </span>
+        </div>
+
+        <div class="record-body" id="record-body">
+    <!-- conteúdo preenchido via JS -->
+        </div>
+
+        <div class="record-footer">
+          <button class="btn secondary" id="open-form">INSERIR INFORMAÇÕES</button>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="../js/chart.js"></script>
+</body>
+</html>

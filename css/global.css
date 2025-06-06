@@ -59,10 +59,8 @@ body {
   transition: background 0.2s;
 }
 
-.menu li.active,
-.menu li:hover {
-  background: #d4d4d4;
-  font-weight: bold;
+.PacientesDiaConteiner:hover, .CalendarContainer:hover {
+  background-color: #797878;
 }
 
 .icon {

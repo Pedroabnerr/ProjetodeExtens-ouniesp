@@ -8,15 +8,7 @@
 </head>
 <body>
  <div class="container">
-    <aside class="sidebar">
-      <h1 class="logo">middley <span>ADMIN</span></h1>
-      <nav class="menu">
-        <ul>
-          <li><i class="icon">&#128100;</i> Pacientes</li>
-          <li class="active"><i class="icon">&#128197;</i> Calendário</li>
-        </ul>
-      </nav>
-    </aside>
+    <aside class="sidebar"></aside>
 
     <main class="content">
       <header class="topbar">
@@ -35,62 +27,60 @@
           <div class="foto"></div>
 
           <div class="linha">
-            <label>Nome <input type="text"></label>
-            <label>Código <input type="text"></label>
+            <label>Nome <input type="text" name="nome"></label>
+            <label>Código <input type="text" name="id"></label>
           </div>
 
           <div class="linha">
-            <label>Data de Nascimento <input type="date"></label>
+            <label>Data de Nascimento <input type="date" name="data_nascimento"></label>
           </div>
 
           <div class="linha">
             <label>Sexo</label>
-            <label><input type="checkbox"> Masculino</label>
-            <label><input type="checkbox"> Feminino</label>
+            <label><input type="radio" name="sexo" value="Masculino"> Masculino</label>
+            <label><input type="radio" name="sexo" value="Feminino"> Feminino</label>
+          </div> 
+
+          <div class="linha">
+            <label>CPF <input type="text" name="cpf"></label>
+            <label>RG <input type="text" name="rg"></label>
           </div>
 
           <div class="linha">
-            <label>CPF <input type="text"></label>
-            <label>RG <input type="text"></label>
+            <label>Celular <input type="text" name="celular"></label>
+            <label>Casa <input type="text" name="casa"></label>
           </div>
 
           <div class="linha">
-            <label>Celular <input type="text"></label>
-            <label>Casa <input type="text"></label>
+            <label>Cep <input type="text" name="cep"></label>
           </div>
 
           <div class="linha">
-            <label>Cep <input type="text"></label>
+            <label>Endereço <input type="text" name="endereco"></label>
+            <label>Número <input type="text" name="numero"></label>
           </div>
 
           <div class="linha">
-            <label>Endereço <input type="text"></label>
-            <label>Número <input type="text"></label>
+            <label>Complemento <input type="text" name="complemento"></label>
+            <label>Bairro <input type="text" name="bairro"></label>
           </div>
 
           <div class="linha">
-            <label>Complemento <input type="text"></label>
-            <label>Bairro <input type="text"></label>
-          </div>
-
-          <div class="linha">
-            <label>Cidade <input type="text"></label>
+            <label>Cidade <input type="text" name="cidade"></label>
             <label>Estado 
-              <select>
-                <option>Selecione</option>
-                <option>SP</option>
-                <option>RJ</option>
+              <select name="estado">
+                <option value="">Selecione</option>
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
                 
               </select>
             </label>
           </div>
-
           <div class="linha">
             <label>País 
               <select>
                 <option>Brasil</option>
                 <option>Argentina</option>
-                
               </select>
             </label>
           </div>
@@ -98,5 +88,6 @@
       </section>
     </main>
   </div>
+  <script type="module" src="../js/rapSheet.js"></script>
 </body>
 </html>
