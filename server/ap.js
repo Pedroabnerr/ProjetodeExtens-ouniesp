@@ -69,6 +69,46 @@ app.get('/pacientes/:PacienteID', async (req, res) => {
   }
 });
 
+app.post('/api/prontuarios', async (req, res) => {
+  const {
+    paciente_id,
+    queixa_principal,
+    historia_molestia,
+    antecedentes,
+    exame_fisico,
+    hipotese_diagnostica,
+    condutas,
+    prescricao,
+  } = req.body;
+
+  if (!paciente_id) {
+    return res.status(400).json({ error: 'paciente_id é obrigatório' });
+  }
+
+  try {
+    const [result] = await pool.execute(
+      `INSERT INTO prontuarios 
+      (paciente_id, queixa_principal, historia_molestia, antecedentes, exame_fisico, hipotese_diagnostica, condutas, prescricao)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+      [
+        paciente_id,
+        queixa_principal,
+        historia_molestia,
+        antecedentes,
+        exame_fisico,
+        hipotese_diagnostica,
+        condutas,
+        prescricao,
+      ]
+    );
+
+    res.status(201).json({ id: result.insertId, message: 'Prontuário salvo com sucesso' });
+  } catch (error) {
+    console.error('Erro ao salvar prontuário:', error);
+    res.status(500).json({ error: 'Erro ao salvar prontuário' });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
